@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="402"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="402"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EZL-gF-R65">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="350"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACF-1A-flo">
+                        <rect key="frame" x="0.0" y="350" width="250" height="41"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.34584767380851933" green="0.86416974815103975" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ACF-1A-flo" secondAttribute="trailing" id="2By-ii-clr"/>
+                <constraint firstItem="ACF-1A-flo" firstAttribute="top" secondItem="EZL-gF-R65" secondAttribute="bottom" id="5EX-9U-JB7"/>
+                <constraint firstAttribute="bottom" secondItem="ACF-1A-flo" secondAttribute="bottom" constant="11" id="5Nr-4Z-fCJ"/>
+                <constraint firstItem="EZL-gF-R65" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ad4-4I-ZHa"/>
+                <constraint firstItem="ACF-1A-flo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d6n-Ax-gKc"/>
+                <constraint firstItem="EZL-gF-R65" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wuU-WP-8Yt"/>
+                <constraint firstAttribute="bottom" secondItem="EZL-gF-R65" secondAttribute="bottom" id="wv2-rZ-tLS"/>
+                <constraint firstAttribute="trailing" secondItem="EZL-gF-R65" secondAttribute="trailing" id="zET-QK-LHh"/>
+            </constraints>
+            <size key="customSize" width="250" height="402"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wv2-rZ-tLS"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="EZL-gF-R65" id="Tkk-Zz-k0V"/>
+                <outlet property="titleLabel" destination="ACF-1A-flo" id="Ujm-cK-8j0"/>
+            </connections>
+            <point key="canvasLocation" x="-141" y="309"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1.jpg" width="600" height="872"/>
+    </resources>
+</document>
